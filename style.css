@@ -1,0 +1,216 @@
+body {
+  background-image: url(background.jpg);
+  background-color: #faa448;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 0.9em;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  animation: fadein 5s;
+}
+
+.header {
+  color: #faa448;
+  text-align: center;
+  font-size: 5em;
+  margin-bottom: 50px;
+  text-shadow: 2px 2px 4px #000;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+}
+
+.timeline-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.timeline {
+  /* max-width: 1000px; */
+  position: relative;
+  margin: auto;
+}
+
+.timeline-period {
+  display: none;
+}
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: #000000cc;
+}
+
+.timeline-period-header {
+  font-size: 1.3em;
+  background-color: #333;
+  color: #faa448;
+  padding: 20px;
+  text-align: center;
+  font-family: "Lucida Grande";
+}
+
+.timeline-period-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 50px;
+  background-color: #faa448;
+}
+
+.timeline-period-content img {
+  width: 400px;
+  height: 300px;
+  margin-right: 20px;
+}
+
+.language-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 50px;
+  padding: 30px;
+  background-color: #faa448;
+  box-shadow: 2px 2px 4px #000;
+}
+
+.about-container {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 10px;
+  padding: 20px;
+  background-color: #faa448;
+  box-shadow: 2px 2px 4px #000;
+}
+
+.support-container {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 10px;
+  padding: 20px;
+  background-color: #faa448;
+  box-shadow: 2px 2px 4px #000;
+}
+
+.sub-header {
+  color: #000;
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 50px;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f1069e;
+}
+
+img {
+  padding: 10px;
+  margin: 10px;
+  object-fit: cover;
+}
+
+.sv_img {
+  height: 555px;
+  object-fit: fill;
+}
+
+.script_img {
+  height: 100px;
+  object-fit: fill;
+  padding: 30px;
+}
+
+p {
+  color: #000;
+  font-size: 1.2em;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  line-height: 2em;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.dot {
+  cursor: pointer;
+  height: 18px;
+  width: 18px;
+  margin: 0 4px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  margin-bottom: 40px;
+}
+
+.active,
+.dot:hover {
+  background-color: #faa448;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
